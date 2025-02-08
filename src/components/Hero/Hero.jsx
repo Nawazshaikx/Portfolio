@@ -1,5 +1,11 @@
 import React from "react";
 import "./Hero.css";
+import htmllogo from "../../assets/Images/HTML5.png";
+import profile from "../../assets/Images/Profile.jpeg";
+import Tailwindlogo from "../../assets/Images/Tailwind.png";
+import csslogo from "../../assets/Images/Css.svg";
+import reactlogo from "../../assets/Images/React-icon.png";
+import javascriptlogo from "../../assets/Images/javascript-logo.webp";
 function Hero() {
   return (
     <>
@@ -14,11 +20,11 @@ function Hero() {
         <div className="hero-img">
           <div>
             <div className="tech-icon">
-              <img src="src\assets\Images\HTML5.png" alt="" width={"20px"} />
+              <img src={htmllogo} alt="" width={"20px"} />
             </div>
 
             <img
-              src="src\assets\Images\Profile.jpeg"
+              src={profile}
               alt=""
               width={"400px"}
               className="profile-main"
@@ -26,29 +32,17 @@ function Hero() {
           </div>
           <div>
             <div className="tech-icon">
-              <img src="src\assets\Images\Css.svg" alt="" width={"20px"} />
+              <img src={csslogo} alt="" width={"20px"} />
             </div>
             <div className="tech-icon">
-              <img
-                src="src\assets\Images\javascript-logo.webp"
-                alt=""
-                width={"20px"}
-              />
+              <img src={javascriptlogo} alt="" width={"20px"} />
             </div>
             <div className="tech-icon">
-              <img
-                src="\src\assets\Images\React-icon.png"
-                alt=""
-                width={"20px"}
-              />
+              <img src={reactlogo} alt="" width={"20px"} />
             </div>
             {/* --- */}
             <div className="tech-icon">
-              <img
-                src="\src\assets\Images\Tailwind.png"
-                alt=""
-                width={"20px"}
-              />
+              <img src={Tailwindlogo} alt="" width={"20px"} />
             </div>
           </div>
         </div>
